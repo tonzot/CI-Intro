@@ -4,6 +4,7 @@ on: push
 
 jobs:
   run:
-    uses: haydargenc/pre-commit@latest
+    using: 'docker'
+    image: '/Docker/Dockerfile'
     steps:
       - run: pre-commit
