@@ -2,8 +2,6 @@ name: pre
 
 on: push
 
-jobs:
-  pre-commit:
-    image: haydargenc/pre-commit
-    steps:
-      - pre-commit
+runs:
+  using: 'docker'
+  image: 'haydargenc/pre-commit'
