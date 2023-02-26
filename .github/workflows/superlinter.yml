@@ -3,5 +3,6 @@ name: pre
 on: push
 
 jobs:
-  using: 'docker'
-  image: 'haydargenc/pre-commit'
+  run:
+    using: 'docker'
+    image: 'haydargenc/pre-commit'
