@@ -1,13 +1,12 @@
-name: pre
-
+name: container
 on: push
 
-run:
-  using: 'docker'
-  image: '/Docker/Dockerfile'
-  
-
 jobs:
-  test:
-    steps:
-    - run: pre-commit
+  node-docker:
+    runs-on: ubuntu-latest
+    container:
+      image: haydargenc/pre-commit:latest
+      steps:
+         - name: Log the parent container node version
+           run: |
+             pre-commit
