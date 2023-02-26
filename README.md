@@ -1,4 +1,2 @@
 # CI-Intro
-test
-
 Test
