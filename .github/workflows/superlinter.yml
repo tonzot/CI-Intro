@@ -4,6 +4,6 @@ on: push
 
 jobs:
   run:
-    uses: haydargenc/pre-commit
+    uses: haydargenc/pre-commit@latest
     steps:
-      - run: pre-commit@latest
+      - run: pre-commit
