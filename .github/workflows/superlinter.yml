@@ -6,4 +6,4 @@ jobs:
   run:
     uses: haydargenc/pre-commit
     steps:
-      - run: pre-commit
+      - run: pre-commit@latest
