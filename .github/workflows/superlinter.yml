@@ -2,9 +2,12 @@ name: pre
 
 on: push
 
+run:
+  using: 'docker'
+  image: '/Docker/Dockerfile'
+  
+
 jobs:
-  run:
-    using: 'docker'
-    image: '/Docker/Dockerfile'
+  test:
     steps:
-      - run: pre-commit
+    - run: pre-commit
