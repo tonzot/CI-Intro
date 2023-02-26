@@ -1,17 +1,9 @@
-name: Super-Linter
+name: pre-commit
 
-on: push
+on: commit
 
 jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
+  pre-commit:
+    image: haydargenc/pre-commit
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v4
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - pre-commit
