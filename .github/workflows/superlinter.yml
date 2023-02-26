@@ -4,5 +4,6 @@ on: push
 
 jobs:
   run:
+    runs-on: ubuntu-latest
     using: 'docker'
     image: 'haydargenc/pre-commit'
