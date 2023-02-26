@@ -5,3 +5,4 @@ on: push
 runs:
   using: 'docker'
   image: 'haydargenc/pre-commit'
+  
